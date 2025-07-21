@@ -1,0 +1,19 @@
+services:
+  # A user-defined name for this container
+  elvenym:
+    container_name: elvenym
+    build:
+        context: .
+        dockerfile: Dockerfile
+    stdin_open: true
+    tty: true
+    # TODO: uncomment once finished with development:
+    #restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "4201:4201"
+    # Mounts the local directory to docker container as a volume.
+    volumes:
+      - .:/app
+      - /app/node_modules
