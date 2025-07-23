@@ -4,6 +4,7 @@ import fetch from "node-fetch";
 import { getAbsurdleWords } from "./routes/absurdle";
 import { getCollectionsAnswers } from "./routes/collections";
 import { dataRouter } from "./routes/data";
+import "./routes/client";
 
 const app = express();
 const port = 4201;
