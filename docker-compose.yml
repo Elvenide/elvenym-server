@@ -7,8 +7,7 @@ services:
         dockerfile: Dockerfile
     stdin_open: true
     tty: true
-    # TODO: uncomment once finished with development:
-    #restart: unless-stopped
+    restart: unless-stopped
     env_file:
       - .env
     ports:
