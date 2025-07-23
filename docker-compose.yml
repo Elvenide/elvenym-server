@@ -13,6 +13,7 @@ services:
       - .env
     ports:
       - "4201:4201"
+      - "4200:4200"
     # Mounts the local directory to docker container as a volume.
     volumes:
       - .:/app

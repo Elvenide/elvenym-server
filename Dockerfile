@@ -24,5 +24,6 @@ RUN npm i
 
 # Open ports, start the application.
 EXPOSE 4201
+EXPOSE 4200
 CMD exec npm start
 # ----------------------------------------------------- 
