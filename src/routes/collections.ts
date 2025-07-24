@@ -22,7 +22,7 @@ export function getCollectionsAnswers(_req: Request, res: Response) {
         year: "numeric",
         month: "long",
         day: "numeric"
-    }) + "ZZZ";
+    });
     const randomGen = new Rand(seed, PRNG.sfc32);
 
     // Create phrase bank
